@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apresentacao</title>
+    <!-- Icones -->
+    <!-- <link rel="stylesheet" type="text/css" href="assets/fonts/style.css" /> -->
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!-- STYLES -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;1,300;1,400&family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="banner" >
+      <div class="navbar">
+        <div class="navbar-content">
+          <ul>
+            <li class="logo">Seja Bem Vindo</li>
+          </ul>
+
+          <ul class="nav">
+            <li>
+              <a href="mailto:tojanexperience@gmail.com?Subject=Oi, vim pelo cartão de visita">
+                <i class="fas fa-globe"></i>
+                <span>Web Site</span>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:tojanexperience@gmail.com?Subject=Oi, vim pelo cartão de visita">
+                <i class="far fa-envelope"></i>
+                <span>E-mail</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://api.whatsapp.com/send?phone=+5511945264417&text=Olá, vim pelo cartão de visita">
+                <i class="fab fa-whatsapp"></i>
+                <span>WhatsApp</span>
+              </a>
+          </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="content">
+        <!-- <div class="main"> -->
+          <!-- Import the component -->
+          <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+          <model-viewer
+            bounds="tight"
+            src="Logo Tomer Extrude.glb"
+            ar ar-modes="scene-viewer webxr quick-look"
+            camera-controls environment-image="neutral"
+            poster="poster.webp" shadow-intensity="1"
+            auto-rotate
+            ios-src="Logo Tomer Extrude.usdz">
+            <button slot="ar-button" style="
+              z-index: 99999; 
+              padding: 16px;
+              background: #ffffff6e;
+              border: 2px solid #343a40;
+              color: #343a40;
+              border-radius: 12px;
+              cursor: pointer;
+              text-transform: uppercase;
+              font-weight: 500;
+              width: 100%;
+              max-width: 200px;
+              transition: all 0.2s ease-in-out;
+              font-family: var(--title-font);
+              font-size: 0.775rem;
+              text-decoration: none;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              position: absolute; 
+              right: 20px;
+              bottom: 20px;
+              margin-left: 8px;
+            ">
+              REALIDADE AUMENTADA
+            </button>
+
+          </model-viewer>
+       
+      </div>
+    </div>
+  </section>
+
+<!-- swiper -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- scrollreveal -->
+<script src="https://unpkg.com/scrollreveal"></script>
+</body>
+</html>
+
+

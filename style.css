@@ -1,0 +1,253 @@
+/*====  RESET ============================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+model-viewer{
+  height: 100vh;
+  width: 100vw;
+}
+
+:root {
+  --header-height: 4.5rem;
+  --hue: 568;
+  --base-color: hsl(var(--hue) 60% 60%);
+  --base-color-second: hsl(var(--hue) 65% 88%);
+  --base-color-alt: hsl(var(--hue) 57% 53%);
+  --title-color: hsl(var(--hue) 99% 8%);
+  --text-color: hsl(236deg 63% 37%);
+  --text-color-light: hsl(0 30% 98%);
+  --body-color: hsl(0 80% 98%);
+  --title-font-size: 1.9rem;
+  --subtitle-font-size: 2rem;
+  --title-font: 'Zen Maru Gothic', sans-serif;
+  --body-font: 'Zen Maru Gothic', sans-serif;
+}
+/*===  BASE ============================ */
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font: 400 1rem var(--body-font);
+  -webkit-font-smoothing: antialiased;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+.navbar {
+  width: 100%;
+  padding: 35px 0;
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 6666;
+}
+.navbar-content {
+  width: 100%;
+  max-width: 980px;
+  margin: auto;
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 25px;
+  width: 200px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #343a40;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.logo::after {
+  text-decoration: none;
+  color: #343a40;
+  text-transform: uppercase;
+}
+
+.logo:hover::after {
+  width: 100%;
+}
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #343a40;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+}
+
+.navbar ul li a svg {
+  fill: #343a40;
+  margin-right: 8px;
+}
+
+.navbar ul li::after {
+  content: '';
+  height: 3px;
+  width: 0;
+  background-color: #343a40;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+  width: 100%;
+}
+
+.navbar ul li a {
+  display: inline-flex;
+  align-items: center;
+}
+
+.navbar ul li a span {
+  margin-left: 8px;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  color: #343a40;
+  display: flex;
+  flex-direction: column;
+}
+
+.content h1 {
+  font-size: 70px;
+  margin-top: 80px;
+}
+
+.button {
+  font-size: 25px;
+  margin: 20px auto;
+  font-weight: 100;
+  line-height: 20px;
+
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  padding: 36px 0;
+  gap: 24px;
+  margin-bottom: 24px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.btn {
+  z-index: 99999; 
+  padding: 16px;
+  background: #ffffff6e;
+  border: 2px solid #343a40;
+  color: #343a40;
+  border-radius: 12px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 500;
+  max-width: 200px;
+  transition: all 0.2s ease-in-out;
+  font-family: var(--title-font);
+  font-size: 0.775rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: mymove 1s;
+  position: absolute; 
+  left: 20px;
+  bottom: 20px;
+  margin-right: 8px;
+}
+
+@keyframes mymove {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  70% {
+    transform: translateY(-10px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.btn:hover {
+  color: #FFFFFF;
+  background: #343a40;
+  border-color: #343a40;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .navbar-content {
+    flex-direction: column;
+  }
+
+  .nav {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .nav li {
+    display: flex;
+    width: 100%;
+    white-space: nowrap;
+  }
+  .nav span {
+    display: block;
+    white-space: nowrap;
+  }
+
+  .navbar-content ul {
+    margin-bottom: 24px;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+}
