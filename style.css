@@ -152,20 +152,6 @@ body {
   padding: 16px;
 }
 
-.buttons {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  width: 100%;
-  padding: 36px 0;
-  gap: 24px;
-  margin-bottom: 24px;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-}
 
 .btn {
   z-index: 99999; 
@@ -215,7 +201,69 @@ body {
   border-color: #343a40;
 }
 
+
+.button-absolute {
+  z-index: 99999;
+  white-space: nowrap;
+  padding: 16px;
+  background: #ffffff6e;
+  border: 2px solid #343a40;
+  color: #343a40;
+  border-radius: 12px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 500;
+  width: 200px;
+  transition: all 0.2s ease-in-out;
+  font-family: var(--title-font);
+  font-size: 0.775rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 96px;
+}
+
+.buttons {
+  display: none;
+}
+
 @media (max-width: 768px) {
+  
+  .navtop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .button-absolute {
+    display: none;
+  }
+  .buttons {
+    z-index: 99999;
+    padding: 16px;
+    position: absolute;
+    background: #ffffff6e;
+    border: 2px solid #343a40;
+    color: #343a40;
+    border-radius: 12px;
+    cursor: pointer;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-weight: 500;
+    width: 200px;
+    max-width: 500px;
+    transition: all 0.2s ease-in-out;
+    font-family: var(--title-font);
+    font-size: 0.775rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 50px;
+    margin-left: calc(50% - 100px);
+    margin-top: 16px;
+  }
   .navbar {
     flex-direction: column;
     gap: 24px;
