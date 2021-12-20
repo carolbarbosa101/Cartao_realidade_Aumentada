@@ -163,7 +163,9 @@ body {
   cursor: pointer;
   text-transform: uppercase;
   font-weight: 500;
-  max-width: 200px;
+  height: 72px;
+  width: 100%;
+  max-width: calc(50% - 30px);
   transition: all 0.2s ease-in-out;
   font-family: var(--title-font);
   font-size: 0.775rem;
@@ -173,7 +175,7 @@ body {
   justify-content: center;
   animation: mymove 1s;
   position: absolute; 
-  left: 20px;
+  left: 350px;
   bottom: 20px;
   margin-right: 8px;
 }
@@ -264,6 +266,7 @@ body {
     margin-left: calc(50% - 100px);
     margin-top: 16px;
   }
+  
   .navbar {
     flex-direction: column;
     gap: 24px;
