@@ -32,7 +32,7 @@ Open the index.html file directly in your browser.
 </br>
 
 # First screen 
-![cap1](https://github.com/user-attachments/assets/6678b5af-fe43-4444-9639-d147bdb38587)
+![gif1](https://github.com/user-attachments/assets/86da60cc-332c-47c4-848f-820b0dbb3e1f)
 
 
 
